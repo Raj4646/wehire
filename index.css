@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.top-navbar{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #252525;
+    color: white;
+}
+.top-navbar li{
+    list-style: none;
+}
+.top-navbar li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+#navbar{
+    background-color: white;
+    padding: 0 4rem;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0px 2px #888888;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+#navbar li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #252525;
+}
+
+#get-started{
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+#get-started:hover{
+    color: #fff;
+    scale: 0.95;
+}
+.links a:hover{
+    color: orange;
+}
+
+@media(max-width:768px) {
+    .links{
+      display: none;
+    }
+    #navbar{
+        padding: 0 1rem;
+    }
+  }
+
+.main-content{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    top: 120px;
+    padding: 8rem 4rem;
+}
+
+.main-content h1{
+    position: relative;
+    font-size: 4rem;
+    overflow: hidden;
+}
+.main-content h1:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, white 5%, white 100%);
+    animation: animate 7s linear forwards;
+}
+@keyframes animate {
+    0%
+    {
+        left: -20%;
+    }   
+    50%
+    {
+        left: 120%;
+    }   
+    100%
+    {
+        left: 120%;
+    }   
+}
+@media(max-width:768px) {
+    .main-content h1{
+        font-size: 2.5rem;
+    }
+  }
+
+.second-content{
+    z-index: -1;
+    position: absolute;
+    background-color: white;
+    height: 800px;
+    width: 100%;
+    top: 640px;
+}
+
+.second-content h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.second-content ul{
+    padding: 0rem 4rem;
+    width: 700px;
+}
+.second-content li{
+    font-weight: 500;
+}
+.second-content p{
+    font-weight: 300;
+}
+@media(max-width:768px) {
+    .second-content{
+        height: 1000px;
+    }
+    .second-content h1{
+        font-size: 1.5rem;
+    }
+    .second-content ul{
+        width: 400px;
+    }
+    .second-content li{
+        font-size: 0.9rem;
+    }
+    .second-content p{
+        font-size: 0.9rem;
+    }
+  }
+.third-content{
+    color: white;
+    z-index: -1;
+    position: absolute;
+    background-color: #252525;
+    height: 225px;
+    width: 100%;
+    top: 1440px;
+    padding: 20px;
+}
+
+.third-content h1{
+    text-align: center;
+}
+.third-content p{
+    text-align: center;
+}
+.get-in-touch-btn{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.get-in-touch-btn p{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: #252525;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+.get-in-touch-btn a{
+    text-decoration: none;
+    color: #252525;
+}
+.get-in-touch-btn p:hover{
+    color: #252525;
+    scale: 0.95;
+}
+@media(max-width:768px) {
+    .third-content{
+        top: 1540px;
+        height: 300px;
+    }
+    .third-content h1{
+        font-size: 1.5rem;
+    }
+    .third-content p{
+        font-size: 1rem;
+    }
+
+}
+
+footer{
+    top: 1665px;
+    z-index: -1;
+    position: absolute;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    
+}
+footer .logo{
+    margin-left: 40px;
+}
+footer p {
+    margin-top: 15px;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+.socials {
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+    margin-left: 40px;
+}
+.socials i {
+    cursor: pointer;
+}
+@media(max-width:768px) {
+    footer{
+        top: 1840px;
+    }
+    footer p {
+        margin-left: 10px;
+    }
+    footer .logo {
+        margin-left: 10px;
+    }
+    .socials{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Hire - Signup</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="top-navbar">
+        <ul>
+            <li><a href="/signin.html">Sign in <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </div>
+    <header class="header">
+    <div id="navbar">
+        <div class="logo"><a href="/">WeHire</a></div>
+        <ul class="links">
+            <li><a href="/">About</a></li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <div class="sign-up">
+        <h1>Let us know about your company.</h1>
+    </div>
+
+    <div class="sign-up-form">
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" required ><br class="line-break">
+            <label for="lname">Last name:</label>
+            <input type="text" required><br>
+            <label for="company">Company Name:</label>
+            <input size="50" type="text" name="company" id="company" required><br>
+            <label for="company-size">Company size:</label>
+            <select id="company-size" name="company-size" required>
+                <option value=">100">Less than 1000 employees</option>
+                <option value="100-999">100-999 employees</option>
+                <option value="1000-1999">1000-1999 employees</option>
+                <option value="2000+">More than 2000 employees</option>
+              </select required><br>
+            <label for="phone">Phone number:</label>
+            <input type="text" required><br class="line-break" >
+            <label for="email">Email: </label>
+            <input type="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="" cols="50" rows="5" required ></textarea><br>
+            <input class="submit-btn" type="submit" value="Submit" >
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+   
+    <script src="https://kit.fontawesome.com/efa9140369.js" crossorigin="anonymous"></script>
+</body>
+</html>
