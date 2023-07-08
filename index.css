@@ -233,7 +233,7 @@
 }
 @media(max-width:768px) {
     .third-content{
-        top: 1620px;
+        top: 1700px;
         height: 300px;
     }
     .third-content h1{
@@ -275,7 +275,7 @@ footer p {
 }
 @media(max-width:768px) {
     footer{
-        top: 1840px;
+        top: 1900px;
     }
     footer p {
         margin-left: 10px;
