@@ -160,6 +160,7 @@
 .second-content p{
     font-weight: 300;
 }
+
 @media(max-width:768px) {
     .second-content{
         height: 1000px;
@@ -219,9 +220,9 @@
     color: #252525;
     scale: 0.95;
 }
-@media(max-width:368px) {
+@media(max-width:350px) {
     .third-content{
-        top: 1620px;
+        top: 1720px;
         height: 300px;
     }
     .third-content h1{
@@ -233,7 +234,6 @@
 }
 @media(max-width:768px) {
     .third-content{
-        top: 1540px;
         height: 300px;
     }
     .third-content h1{
@@ -285,5 +285,11 @@ footer p {
     }
     .socials{
         margin-left: 10px;
+    }
+}
+
+@media(max-width:350px) {
+    footer{
+        top: 2040px;
     }
 }
