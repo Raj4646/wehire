@@ -35,8 +35,7 @@
 #navbar{
     background-color: white;
     padding: 0 4rem;
-    width: 100%;
-    max-width: 100%;
+    width: 100vw;
     height: 60px;
     display: flex;
     align-items: center;
@@ -87,6 +86,9 @@
     }
     #navbar{
         padding: 0 1rem;
+    }
+    .sticky{
+        width: 100vw;
     }
   }
 
@@ -166,7 +168,7 @@
         font-size: 1.5rem;
     }
     .second-content ul{
-        width: 400px;
+        width: 100%;
     }
     .second-content li{
         font-size: 0.9rem;

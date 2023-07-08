@@ -168,4 +168,7 @@
   .links{
     display: none;
   }
+  #navbar{
+    padding: 0 1rem;
+}
 }
