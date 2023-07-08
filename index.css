@@ -222,8 +222,7 @@
 }
 @media(max-width:350px) {
     .third-content{
-        top: 1800px;
-        height: 300px;
+        top: 1720px;
     }
     .third-content h1{
         font-size: 1rem;
@@ -234,13 +233,14 @@
 }
 @media(max-width:768px) {
     .third-content{
+        top: 1620px;
         height: 300px;
     }
     .third-content h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .third-content p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 }
@@ -290,6 +290,6 @@ footer p {
 
 @media(max-width:350px) {
     footer{
-        top: 2100px;
+        top: 2000px;
     }
 }
