@@ -94,14 +94,13 @@
 
 .main-content{
     z-index: -1;
-    position: absolute;
     width: 100%;
-    height: 520px;
-    top: 120px;
+    height: 600px;
     padding: 8rem 4rem;
 }
 
 .main-content h1{
+    z-index: -1;
     position: relative;
     font-size: 4rem;
     overflow: hidden;
@@ -130,6 +129,9 @@
     }   
 }
 @media(max-width:768px) {
+    .main-content{
+        height: auto;
+    }
     .main-content h1{
         font-size: 2.5rem;
     }
@@ -137,11 +139,9 @@
 
 .second-content{
     z-index: -1;
-    position: absolute;
     background-color: white;
     height: 800px;
     width: 100%;
-    top: 640px;
 }
 
 .second-content h1{
@@ -163,7 +163,7 @@
 
 @media(max-width:768px) {
     .second-content{
-        height: 1000px;
+        height: auto;
     }
     .second-content h1{
         font-size: 1.5rem;
@@ -181,11 +181,9 @@
 .third-content{
     color: white;
     z-index: -1;
-    position: absolute;
     background-color: #252525;
     height: 225px;
     width: 100%;
-    top: 1440px;
     padding: 20px;
 }
 
@@ -221,9 +219,7 @@
     scale: 0.95;
 }
 @media(max-width:350px) {
-    .third-content{
-        top: 1720px;
-    }
+    
     .third-content h1{
         font-size: 1rem;
     }
@@ -233,8 +229,7 @@
 }
 @media(max-width:768px) {
     .third-content{
-        top: 1700px;
-        height: 300px;
+        height: auto;
     }
     .third-content h1{
         font-size: 1.2rem;
@@ -246,9 +241,7 @@
 }
 
 footer{
-    top: 1665px;
     z-index: -1;
-    position: absolute;
     background-color: white;
     height: auto;
     width: 100%;
@@ -274,9 +267,7 @@ footer p {
     cursor: pointer;
 }
 @media(max-width:768px) {
-    footer{
-        top: 1900px;
-    }
+   
     footer p {
         margin-left: 10px;
     }
@@ -288,8 +279,3 @@ footer p {
     }
 }
 
-@media(max-width:350px) {
-    footer{
-        top: 2000px;
-    }
-}
